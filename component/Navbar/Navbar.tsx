@@ -1,33 +1,61 @@
+"use client";
+
 export default function Navbar() {
   return (
-    <nav
-      style={{
-        width: "100%",
-        padding: "20px 40px",
-        background: "#07111f",
-        color: "white",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        boxSizing: "border-box",
-      }}
-    >
-      <h2 style={{ margin: 0 }}>Nayak Studios</h2>
+    <header className="navbar">
 
-      <div style={{ display: "flex", gap: "25px" }}>
-        <a href="/" style={{ color: "white", textDecoration: "none" }}>
+      <a
+        href="/"
+        className="navbar-logo"
+      >
+        <span className="logo-mark">
+          N
+        </span>
+
+        <span className="logo-text">
+          NAYAK
+          <small>STUDIOS</small>
+        </span>
+      </a>
+
+
+      <nav className="navbar-links">
+
+        <a href="/">
           Home
         </a>
-        <a href="#about" style={{ color: "white", textDecoration: "none" }}>
+
+        <a href="#showroom">
+          Viewer
+        </a>
+
+        <a href="#business">
+          Business
+        </a>
+
+        <a href="#apps">
+          Apps
+        </a>
+
+        <a href="#about">
           About
         </a>
-        <a href="#games" style={{ color: "white", textDecoration: "none" }}>
-          Games
-        </a>
-        <a href="#contact" style={{ color: "white", textDecoration: "none" }}>
+
+        <a href="#contact">
           Contact
         </a>
-      </div>
-    </nav>
+
+      </nav>
+
+
+      <a
+        href="/portfolio"
+        className="navbar-portfolio"
+      >
+        PORTFOLIO
+        <span>↗</span>
+      </a>
+
+    </header>
   );
 }
